@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GHO BANK</string>
+    <string name="welcome_message">Welcome To GhoBank App</string>
+    <string name="welcome">Welcome to GoBank App</string>
+    <!--<string name="deep_link_url">www.ghobank.com</string>
+    <string name="native_payment_method_name">https://www.ghobank.com/pay</string>-->
+
+    <!--<string name="app_name">PBAAHI1</string>
+    <string name="welcome_message">Welcome To PBAAHI1 App</string>
+    <string name="welcome">Welcome to PBAAHI1 App</string>-->
+
+    <string name="deep_link_url">www.ghobank.com</string>
+    <string name="native_payment_method_name">https://www.ghobank.com</string>
+    <string-array  name="my_payment_method_names">
+        <item>https://www.ghomediator.com/mcpba</item>
+    </string-array>
+
+    <string name="base_api_url">http://www.ghobank.com:9091</string>
+    <string name="payment_response_api_url">http://www.ghobank.com:9091/paymentresponse</string>
+    <string name="encrypt_api_url">http://www.ghobank.com:9091/encrypt</string>
+
+
+
+
+</resources>

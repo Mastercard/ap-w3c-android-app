@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">GHO BANK</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_blank_username">Please enter username</string>
+    <string name="error_blank_password">Please enter password</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="registeration_successfull">Payment Method Registered Successfully</string>
+    <string name="welcome_message">Welcome To GhoBank App</string>
+    <string name="new_way_of_payment">There is a new way to make payments</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_unregister">UNREGISTER</string>
+    <string name="registeration_success_msg">Registered Successfully</string>
+    <string name="make_payment_title">You have choosen to make  a payment</string>
+    <string name="total_transcation">Total Transcation</string>
+    <string name="bt_label_confirm">CONFIRM</string>
+    <string name="unregisteration_success">Unregistered Successfully</string>
+    <string name="merchant_id">Merchant Id</string>
+    <string name="merchant_name">Merchant Name</string>
+    <string name="proceed">CONFIRM</string>
+    <string name="do_u_want_confirm">Do you want to confirm ?</string>
+    <string name="cancel">CANCEL</string>
+    <string name="reject">CANCEL</string>
+    <string name="welcome">Welcome to GoBank App</string>
+    <string name="fingerprint_title">One-touch Sign In</string>
+    <string name="fingerprint_instruction">Please place your fingertip on the scanner to verify your identity</string>
+    <string name="login_with_email">Login with email-Id</string>
+    <string-array name="payment_method_names">
+        <item>https://www.ghobank.com</item>
+    </string-array>
+
+
+    <string name="title_top_level_origin">TopLevelOrigin</string>
+    <string name="title_payment_request_origin">PaymentRequestOrigin</string>
+    <string name="title_payment_request_id">PaymentRequestId</string>
+    <string name="title_method_data">MethodData</string>
+    <string name="title_method_name">Payment Method </string>
+    <string name="title_merchant_name">Merchant Name</string>
+    <string name="title_total">Total</string>
+    <string name="no_network_available">No Network Available , please check the network settings and try again</string>
+    <string name="biometric_failed">Fingerprint not recognized</string>
+    <string name="biometric_error_sdk_not_supported">Sdk version not supported</string>
+    <string name="biometric_error_hardware_not_supported">Device does not support biometric authentication</string>
+    <string name="biometric_error_fingerprint_not_available">Fingerprint is not registered in device</string>
+    <string name="biometric_error_permission_not_granted">Permission is not granted by user</string>
+    <string name="biometric_failure">Login not successful!</string>
+    <string name="biometric_cancelled">Authentication cancelled by user</string>
+    <string name="biometric_success">Login Successful</string>
+    <string name="biometric_dialog_subtitle">Authentication is required to continue</string>
+    <string name="biometric_dialog_desc">This app uses biometric authentication to protect your data.</string>
+    <string name="biometric_dialog_cancel_btn">Cancel</string>
+    <string name="biometric_login_cancelled">Authentication cancelled</string>
+
+    <string name="payment_method_successfully_registered">Payment Method Successfully Registered with </string>
+    <string name="failed_to_register_payment_method">Failed to Register Payment Method with </string>
+    <string name="payment_method_successfully_unregistered">Payment Method Successfully Unregistered with </string>
+    <string name="failed_to_unregister_payment_method">Failed to Unregister Payment Method with </string>
+
+    <string name="payment_validation_fail">Payment Validation Failed</string>
+
+    <string name="ok_message">OK</string>
+
+
+    <!-- Message Codes -->
+    <string name="auth_failure_code">AHI5001</string>
+    <string name="auth_failure_message">Authentication failure</string>
+
+    <string name="cancel_code">AHI5009</string>
+    <string name="cancel_message">The payment request is cancelled by user</string>
+
+
+    <string name="merchant_cert_validation_fail">Merchant Certificate Validation</string>
+
+    <string name="merchant_cert_validation_fail_code">AHI5001</string>
+    <string name="merchant_cert_validation_fail_message">Merchant Certificate Validation Failed</string>
+
+
+
+
+    <string name="artefact_enviroment_dev">dev</string>
+    <string name="artefact_enviroment_uat">uat</string>
+    <string name="artefact_enviroment_qa">qa</string>
+    <string name="artefact_enviroment_pit">pit</string>
+
+    <string name="payment_type">mcpba</string>
+
+
+</resources>

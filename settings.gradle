@@ -1,0 +1,2 @@
+include ':ap-w3c-android-artifact-release'
+include ':app'

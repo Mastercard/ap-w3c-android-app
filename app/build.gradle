@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: '../jacoco.gradle'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    signingConfigs {
+
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 4
+        versionName "4.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //signingConfig signingConfigs.mastercardw3c
+    }
+    buildTypes {
+        release {
+            testCoverageEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'boolean', 'ENABLE_LOGGING', 'true'
+        }
+        debug {
+            testCoverageEnabled false
+            buildConfigField 'boolean', 'ENABLE_LOGGING', 'true'
+        }
+    }
+    productFlavors {
+        ghobank {
+            dimension = 'content'
+            applicationId = 'com.brillio.testapp'
+            buildConfigField 'String', 'WalletId', '"bc963c1ff3fe818c802bf51d21f43c9dfd5d7de0ff36a5e34208e2d3cbf22619"'
+            //buildConfigField 'String', 'WalletId', '"00020"'
+        }
+    }
+
+    buildToolsVersion '28.0.3'
+    flavorDimensions 'content'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    //implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+}
+
+repositories {
+    mavenCentral()
+}
